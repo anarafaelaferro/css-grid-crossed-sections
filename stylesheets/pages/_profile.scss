@@ -1,0 +1,12 @@
+body {
+  @include tablet {
+    min-height: 100vh;
+  }
+  display: grid;
+  grid-template-columns: 1fr fit-content(800px) 1fr;
+  grid-template-rows: 1fr max-content 1fr;
+  .container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}

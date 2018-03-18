@@ -1,0 +1,123 @@
+/*
+--------------------------------------------------------------------------------
+HTML elements look n feel
+--------------------------------------------------------------------------------
+*/
+html {
+  /* base font-size is at reset.scss */
+  @include phablet { @include retina(1.3) { font-size: 100%; } }
+  @include tablet  { @include retina(1.5) { font-size: 100%; } }
+  @include desktop { @include retina(2)   { font-size: 100%; } }
+}
+
+body {
+  background-color: $white;
+  color: $dark;
+  font: normal 400 2rem/2.8rem 'Palanquin', sans-serif;
+  letter-spacing: -.001em;
+  padding: 10px;
+}
+
+h1 {
+  font-family: 'Abril Fatface', serif;
+  font-size: 4rem;
+  line-height: 100%;
+  color: $pink;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'Palanquin', serif;
+}
+
+span {
+  display: inline-block;
+}
+
+a {
+  @include transition();
+  cursor: pointer;
+  text-decoration: none;
+}
+
+b {
+  font-weight: 600;
+}
+
+strong {
+  font-weight: 800;
+}
+
+i {
+  font-style: italic;
+}
+
+
+.trophies, .info {
+  background-color: $light-blue;
+  border: solid rgba($dark-blue, 0.6) 2px;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+}
+
+.container {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  div.trophies, div.info {
+    background-color: $light-blue;
+    border: solid rgba($dark-blue, 0.6) 2px;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    &.trophies {
+      //background-color: #B6EAFF;
+    }
+  }
+}
+
+.label {
+  color: $dark-blue;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.header {
+  background-color: transparent;
+  border: none;
+  .label {
+    font-weight: 200;
+  }
+}
+
+.info {
+  text-align: center;
+  line-height: 140%;
+}
+
+.bio {
+  border: none;
+  background-color: rgba($pink,0.9);
+  padding: 1.5rem;
+  padding-bottom: 2.2rem;
+  p {
+    line-height: 150%;
+    color: $white;
+    font-size: 1.4rem;
+  }
+}
+
+.photo {
+  padding: 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.trophies {
+  // padding-left: 0.8rem;
+  img {
+    width: 40px;
+  }
+}
