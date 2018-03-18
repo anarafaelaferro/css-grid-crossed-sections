@@ -1,4 +1,4 @@
-# Crossed Sections Layout - css-grid-post
+# CSS Grid - Crossed Sections Layout
 
 Go to the example [Profile Page](index.html) used on the blogpost.
 
