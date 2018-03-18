@@ -17,11 +17,20 @@
     .trophies {
       grid-row: 2 / -1;
     }
+    
     .photo {
       grid-area: 2 / 2 / 3 / 4;
     }
+    
     .bio {
       grid-area: 3 / 2 / 4 / 5;
+    }
+    
+    .trophies, .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
     }
   }
 }
